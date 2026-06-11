@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GEU新员工入职关怀行动手册</title>
+<title>欢迎加入GOFO大家庭</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap');
 
@@ -16,7 +16,6 @@
     --accent-blue: #4A90D9;
     --accent-green: #5CB85C;
     --accent-purple: #9B59B6;
-    --accent-pink: #E91E63;
     --text: #333333;
     --text-light: #666666;
     --text-lighter: #999999;
@@ -75,78 +74,78 @@
     max-width: 900px;
   }
 
-  .cover-badge {
-    display: inline-block;
-    background: rgba(255,255,255,0.2);
-    backdrop-filter: blur(10px);
-    color: var(--white);
-    padding: 8px 24px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-    border: 1px solid rgba(255,255,255,0.3);
-  }
-
   .cover h1 {
-    font-size: 52px;
+    font-size: 48px;
     font-weight: 900;
     color: var(--white);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     letter-spacing: 2px;
     text-shadow: 0 4px 20px rgba(0,0,0,0.15);
   }
 
-  .cover h2 {
-    font-size: 28px;
-    font-weight: 300;
-    color: rgba(255,255,255,0.95);
+  .cover h1.en {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
     margin-bottom: 40px;
   }
 
-  .cover-subtitle {
-    font-size: 18px;
-    color: rgba(255,255,255,0.85);
-    margin-bottom: 50px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .cover-tags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 50px;
-  }
-
-  .cover-tag {
+  .cover-values {
     background: rgba(255,255,255,0.15);
     backdrop-filter: blur(10px);
-    color: var(--white);
-    padding: 10px 22px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 500;
+    border-radius: var(--radius-lg);
+    padding: 32px 40px;
+    margin-bottom: 40px;
     border: 1px solid rgba(255,255,255,0.25);
   }
 
-  .cover-footer {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
+  .cover-values .values-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 16px;
+  }
+
+  .cover-values .values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .cover-values .value-item {
     text-align: center;
-    color: rgba(255,255,255,0.7);
+    padding: 12px 8px;
+  }
+
+  .cover-values .value-item .zh {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+
+  .cover-values .value-item .en {
+    font-size: 11px;
+    font-weight: 400;
+    color: rgba(255,255,255,0.75);
+  }
+
+  .cover-wish {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.95);
+    margin-bottom: 8px;
+  }
+
+  .cover-wish.en {
     font-size: 14px;
-    z-index: 1;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
   }
 
   .scroll-indicator {
     position: absolute;
-    bottom: 80px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -196,49 +195,6 @@
     margin: 0 auto;
   }
 
-  /* ===== OVERVIEW CARDS ===== */
-  .overview-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 50px;
-  }
-
-  .overview-card {
-    background: var(--white);
-    border-radius: var(--radius);
-    padding: 28px 24px;
-    text-align: center;
-    box-shadow: var(--shadow);
-    transition: all 0.3s ease;
-    border-top: 4px solid var(--primary);
-  }
-
-  .overview-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-hover);
-  }
-
-  .overview-card .number {
-    font-size: 42px;
-    font-weight: 900;
-    color: var(--primary);
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-
-  .overview-card .label {
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 6px;
-  }
-
-  .overview-card .desc {
-    font-size: 13px;
-    color: var(--text-lighter);
-  }
-
   /* ===== JOURNEY MAP ===== */
   .journey-map {
     background: var(--white);
@@ -250,7 +206,7 @@
 
   .journey-timeline {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0;
     position: relative;
   }
@@ -259,10 +215,10 @@
     content: '';
     position: absolute;
     top: 35px;
-    left: 12.5%;
-    right: 12.5%;
+    left: 16.6%;
+    right: 16.6%;
     height: 4px;
-    background: linear-gradient(to right, #FFB347, #F26522, #D4551A, #9B59B6);
+    background: linear-gradient(to right, #F26522, #D4551A, #9B59B6);
     border-radius: 2px;
   }
 
@@ -283,10 +239,9 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   }
 
-  .journey-phase:nth-child(1) .dot { background: #FFB347; }
-  .journey-phase:nth-child(2) .dot { background: #F26522; }
-  .journey-phase:nth-child(3) .dot { background: #D4551A; }
-  .journey-phase:nth-child(4) .dot { background: #9B59B6; }
+  .journey-phase:nth-child(1) .dot { background: #F26522; }
+  .journey-phase:nth-child(2) .dot { background: #D4551A; }
+  .journey-phase:nth-child(3) .dot { background: #9B59B6; }
 
   .journey-phase .phase-name {
     font-size: 18px;
@@ -335,10 +290,9 @@
     flex-shrink: 0;
   }
 
-  .phase-badge.p1 { background: linear-gradient(135deg, #FFB347, #FF8C42); }
-  .phase-badge.p2 { background: linear-gradient(135deg, #F26522, #E0551A); }
-  .phase-badge.p3 { background: linear-gradient(135deg, #D4551A, #B84515); }
-  .phase-badge.p4 { background: linear-gradient(135deg, #9B59B6, #8E44AD); }
+  .phase-badge.p1 { background: linear-gradient(135deg, #F26522, #E0551A); }
+  .phase-badge.p2 { background: linear-gradient(135deg, #D4551A, #B84515); }
+  .phase-badge.p3 { background: linear-gradient(135deg, #9B59B6, #8E44AD); }
 
   .phase-title-group h3 {
     font-size: 26px;
@@ -386,26 +340,6 @@
     color: var(--secondary);
     line-height: 1.4;
   }
-
-  .action-card .card-owner {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    font-weight: 600;
-    padding: 4px 12px;
-    border-radius: 50px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    margin-left: 10px;
-  }
-
-  .owner-hrbp { background: #FFF3E8; color: #D4551A; }
-  .owner-dept { background: #E8F4FD; color: #4A90D9; }
-  .owner-admin { background: #E8F8F0; color: #27AE60; }
-  .owner-ssc { background: #F5E8FF; color: #9B59B6; }
-  .owner-newbie { background: #FFF8E8; color: #E8A317; }
-  .owner-all { background: #F0F0F0; color: #555; }
 
   .action-card .card-desc {
     font-size: 14px;
@@ -466,7 +400,7 @@
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
-    min-width: 800px;
+    min-width: 700px;
   }
 
   .timeline-table thead th {
@@ -510,22 +444,29 @@
   }
 
   .footer-section h3 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+  }
+
+  .footer-section h3.en {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.7;
+    margin-bottom: 24px;
   }
 
   .footer-section .footer-letter {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 2;
-    opacity: 0.9;
-    max-width: 650px;
+    opacity: 0.85;
+    max-width: 600px;
     margin: 0 auto 30px;
     text-align: left;
   }
 
   .footer-section .footer-letter p {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     text-indent: 2em;
   }
 
@@ -538,18 +479,17 @@
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 768px) {
-    .cover h1 { font-size: 32px; }
-    .cover h2 { font-size: 20px; }
+    .cover h1 { font-size: 30px; }
+    .cover h1.en { font-size: 16px; }
+    .cover-values .values-grid { grid-template-columns: repeat(2, 1fr); }
     .section { padding: 40px 20px; }
     .section h2 { font-size: 26px; }
     .journey-timeline { grid-template-columns: 1fr; gap: 24px; }
     .journey-timeline::before { display: none; }
     .actions-grid { grid-template-columns: 1fr; }
-    .overview-grid { grid-template-columns: 1fr; }
     .timeline-table-wrapper { padding: 16px; }
   }
 
-  /* ===== PRINT ===== */
   @media print {
     .cover { min-height: auto; page-break-after: always; }
     .section { padding: 30px 20px; }
@@ -603,64 +543,6 @@
   }
 
   html { scroll-behavior: smooth; }
-
-  /* ===== WELCOME LETTER ===== */
-  .welcome-letter {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    padding: 40px 48px;
-    box-shadow: var(--shadow);
-    margin-bottom: 50px;
-    border-left: 5px solid var(--primary);
-    position: relative;
-  }
-
-  .welcome-letter::before {
-    content: '"';
-    font-size: 80px;
-    color: var(--primary-light);
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    font-family: Georgia, serif;
-    line-height: 1;
-  }
-
-  .welcome-letter .letter-title {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--secondary);
-    margin-bottom: 20px;
-    padding-left: 30px;
-  }
-
-  .welcome-letter .letter-body {
-    font-size: 15px;
-    color: var(--text-light);
-    line-height: 2;
-    padding-left: 30px;
-  }
-
-  .welcome-letter .letter-body p {
-    margin-bottom: 12px;
-  }
-
-  .welcome-letter .letter-sign {
-    text-align: right;
-    margin-top: 24px;
-    padding-left: 30px;
-    font-size: 15px;
-    color: var(--text);
-    font-weight: 600;
-  }
-
-  @media (max-width: 768px) {
-    .welcome-letter { padding: 24px 20px; }
-    .welcome-letter::before { font-size: 50px; }
-    .welcome-letter .letter-title,
-    .welcome-letter .letter-body,
-    .welcome-letter .letter-sign { padding-left: 20px; }
-  }
 </style>
 </head>
 <body>
@@ -669,7 +551,6 @@
 <nav class="top-nav">
   <div class="nav-logo">GOFO · GEU</div>
   <div class="nav-links">
-    <a href="#welcome">欢迎信</a>
     <a href="#journey">入职旅程</a>
     <a href="#phases">阶段详情</a>
     <a href="#timeline">时间轴</a>
@@ -679,88 +560,56 @@
 <!-- COVER -->
 <section class="cover">
   <div class="cover-content">
-    <div class="cover-badge">GEU 人力资源部</div>
-    <h1>新员工入职关怀行动手册</h1>
-    <h2>GEU国内区专属方案</h2>
-    <p class="cover-subtitle">
-      从入职前到融入期全周期关怀，多角色协同，<br>
-      让每一位新伙伴感受GOFO温度，快速融入、安心成长
-    </p>
-    <div class="cover-tags">
-      <span class="cover-tag">📋 入职指引</span>
-      <span class="cover-tag">🤝 Buddy陪伴</span>
-      <span class="cover-tag">📚 学习成长</span>
-      <span class="cover-tag">🎉 文化融入</span>
+    <h1>欢迎加入GOFO大家庭！<br>很高兴与你携手同行、共赴新程。</h1>
+    <h1 class="en">Welcome to the GOFO Family!<br>We are delighted to walk together and embark on a new journey with you.</h1>
+
+    <div class="cover-values">
+      <div class="values-title">我们的价值观 Our Values</div>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="zh">客户至上</div>
+          <div class="en">Customer First</div>
+        </div>
+        <div class="value-item">
+          <div class="zh">以人为本</div>
+          <div class="en">People Centric</div>
+        </div>
+        <div class="value-item">
+          <div class="zh">坦诚正直</div>
+          <div class="en">Integrity & Transparency</div>
+        </div>
+        <div class="value-item">
+          <div class="zh">自驱卓越</div>
+          <div class="en">Ownership & Excellence</div>
+        </div>
+      </div>
     </div>
+
+    <div class="cover-wish">愿你在GOFO收获成长、绽放价值，与团队携手共进！</div>
+    <div class="cover-wish en">May you grow steadily, realize your value in GOFO, and forge ahead with the team!</div>
   </div>
   <div class="scroll-indicator">
     <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round">
       <path d="M12 5v14M5 12l7 7 7-7"/>
     </svg>
   </div>
-  <div class="cover-footer">GOFO · 用温暖开启每一位新伙伴的职场之旅</div>
 </section>
 
-<!-- WELCOME LETTER -->
-<section class="section" id="welcome">
-  <div class="section-header">
-    <div class="section-tag">致新伙伴</div>
-    <h2>一封欢迎信</h2>
-    <p class="section-desc">恭喜你加入GOFO大家庭，以下是为你准备的入职指引</p>
-  </div>
-
-  <div class="welcome-letter">
-    <div class="letter-title">亲爱的伙伴，欢迎加入GOFO！</div>
-    <div class="letter-body">
-      <p>非常高兴你选择加入GOFO GEU团队！从今天起，你就是我们大家庭中不可或缺的一员。</p>
-      <p>我们深知，加入一家新公司、进入一个新环境，既充满期待，也难免忐忑。请你放心，在你入职的每一个阶段，都有专人陪伴你——帮你熟悉环境、解答疑问、融入团队。</p>
-      <p>你的Buddy会是你最近的伙伴，你的直接上级会是你业务成长路上的引路人，你的HRBP会全程关注你的融入体验。遇到任何问题，随时找他们聊聊。</p>
-      <p>GOFO始终坚持客户至上、坦诚正直、以人为本、自驱卓越的价值观。我们相信，每一位伙伴都是公司最宝贵的财富。愿你在这里收获成长、绽放价值！</p>
-      <p>再次欢迎你，期待与你并肩同行！</p>
-    </div>
-    <div class="letter-sign">GOFO · GEU 人力资源部</div>
-  </div>
-</section>
-
-<!-- OVERVIEW + JOURNEY MAP -->
+<!-- JOURNEY MAP -->
 <section class="section" id="journey">
   <div class="section-header">
     <div class="section-tag">入职旅程</div>
-    <h2>四阶段融入路径</h2>
-    <p class="section-desc">从入职前到融入期，每个阶段都有明确的目标和行动，陪伴你顺利完成过渡</p>
-  </div>
-
-  <div class="overview-grid">
-    <div class="overview-card">
-      <div class="number">4</div>
-      <div class="label">阶段覆盖</div>
-      <div class="desc">从入职前到融入期全周期</div>
-    </div>
-    <div class="overview-card">
-      <div class="number">5</div>
-      <div class="label">协同角色</div>
-      <div class="desc">业务部门/HRBP/行政/SSC/新人</div>
-    </div>
-    <div class="overview-card">
-      <div class="number">1</div>
-      <div class="label">对一Buddy</div>
-      <div class="desc">全程陪伴，随时答疑</div>
-    </div>
+    <h2>你的融入路径</h2>
+    <p class="section-desc">从入职第一天到深度融入，每个阶段都有清晰的目标和行动，陪你一步步安心成长</p>
   </div>
 
   <div class="journey-map">
     <div class="journey-timeline">
       <div class="journey-phase">
         <div class="dot"></div>
-        <div class="phase-name">暖心准备</div>
-        <div class="phase-period">D-3 至 D-1</div>
-        <div class="phase-desc">入职前物资准备<br>信息同步预热<br>办公环境就绪</div>
-      </div>
-      <div class="journey-phase">
-        <div class="dot"></div>
         <div class="phase-name">建立连接</div>
         <div class="phase-period">Week 1</div>
-        <div class="phase-desc">首日仪式感<br>文化融入启动<br>Buddy配对</div>
+        <div class="phase-desc">入职手续办理<br>认识团队<br>Buddy配对<br>学习启动</div>
       </div>
       <div class="journey-phase">
         <div class="dot"></div>
@@ -770,9 +619,9 @@
       </div>
       <div class="journey-phase">
         <div class="dot"></div>
-        <div class="phase-name">成长·评估</div>
+        <div class="phase-name">成长·融入</div>
         <div class="phase-period">Month 3+</div>
-        <div class="phase-desc">HRBP 1:1沟通<br>成长路径确认<br>深度融入</div>
+        <div class="phase-desc">HRBP 1:1沟通<br>成长路径确认<br>深度融入团队</div>
       </div>
     </div>
   </div>
@@ -781,86 +630,12 @@
 <!-- PHASE DETAILS -->
 <section class="section" id="phases">
 
-  <!-- PHASE 1 -->
+  <!-- PHASE 1: 建立连接 -->
   <div class="phase-block">
     <div class="phase-header">
       <div class="phase-badge p1">01</div>
       <div class="phase-title-group">
-        <h3>暖心准备阶段</h3>
-        <div class="phase-period">D-3 至 D-1 · 入职前暖心保温</div>
-      </div>
-    </div>
-    <div class="actions-grid">
-
-      <div class="action-card">
-        <div class="card-header">
-          <div class="card-title">入职信息通知与关怀预热</div>
-          <span class="card-owner owner-hrbp">招聘BP</span>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li>发送正式Offer确认函及入职指引邮件</li>
-            <li>告知新人直接上级及HRBP联系方式，建立初步连接</li>
-            <li>发送线上学习平台预开通通知</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="action-card">
-        <div class="card-header">
-          <div class="card-title">入职物资与办公环境准备</div>
-          <span class="card-owner owner-admin">行政部</span>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li>准备入职礼包</li>
-            <li>准备工位、电脑、显示器、网络权限等办公设备</li>
-            <li>提前开通飞书账号、PDA系统、邮箱等企业系统权限</li>
-            <li>确认门禁卡/工牌制作</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="action-card">
-        <div class="card-header">
-          <div class="card-title">业务侧入职准备</div>
-          <span class="card-owner owner-dept">所属部门</span>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li>确认工位、设备、系统权限申请</li>
-            <li>安排Buddy</li>
-            <li>制定新员工带教计划</li>
-            <li>准备首周工作安排、学习材料、业务文档权限</li>
-            <li>直接上级发送欢迎信息，表达期待</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="action-card">
-        <div class="card-header">
-          <div class="card-title">人力系统与合规准备</div>
-          <span class="card-owner owner-ssc">SSC</span>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li>完成EHR系统入职信息录入及档案建立</li>
-            <li>确认社保、公积金、税务登记流程启动</li>
-            <li>开通线上学习平台账号</li>
-            <li>准备劳动合同、保密协议、竞业协议等法律文件</li>
-            <li>确认工资卡信息收集</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- PHASE 2 -->
-  <div class="phase-block">
-    <div class="phase-header">
-      <div class="phase-badge p2">02</div>
-      <div class="phase-title-group">
-        <h3>建立连接阶段</h3>
+        <h3>建立连接</h3>
         <div class="phase-period">Week 1 · 从陌生到熟悉的第一步</div>
       </div>
     </div>
@@ -869,32 +644,20 @@
       <!-- DAY 1 -->
       <div class="action-card">
         <div class="card-header">
-          <div class="card-title">DAY 1 · 入职首日仪式</div>
-          <span class="card-owner owner-all">全员协同</span>
+          <div class="card-title">📅 Day 1 · 你的入职首日</div>
         </div>
         <div class="card-desc">
-          <strong>SSC负责：</strong>
           <ul>
-            <li>办理入职手续</li>
-            <li>签署劳动合同及合规文件</li>
-          </ul>
-          <strong>行政部负责：</strong>
-          <ul>
-            <li>发放入职礼包</li>
-          </ul>
-          <strong>招聘HR负责：</strong>
-          <ul>
-            <li>带领熟悉办公环境</li>
-            <li>安排与直接上级、部门负责人、核心团队成员见面</li>
-            <li>介绍GOFO价值观（客户至上、坦诚正直、以人为本、自驱卓越）</li>
-          </ul>
-          <strong>HR负责：</strong>
-          <ul>
-            <li>在部门群发送新人入职欢迎</li>
+            <li><strong>办理入职手续：</strong>SSC协助你完成入职手续，签署劳动合同及合规文件</li>
+            <li><strong>领取入职礼包：</strong>行政部为你准备了入职礼包</li>
+            <li><strong>熟悉办公环境：</strong>招聘HR带你熟悉办公环境，安排与直接上级、部门负责人、核心团队成员见面</li>
+            <li><strong>了解价值观：</strong>招聘HR向你介绍GOFO价值观——客户至上、以人为本、坦诚正直、自驱卓越</li>
+            <li><strong>认识Buddy：</strong>你的专属Buddy将与你正式见面，接下来会全程陪伴你</li>
+            <li><strong>收到部门欢迎：</strong>部门群将发送你的入职欢迎</li>
           </ul>
           <div class="highlight-box">
             <div class="hl-title">📚 入职当周课程推送</div>
-            入职当周推送以下线上学习平台课程：① GEU新人启航学习培训 ② GOFO EU业务术语考试 ③ 英语能力考试
+            入职当周你将收到线上学习平台推送的课程：① GEU新人启航学习培训 ② GOFO EU业务术语考试 ③ 英语能力考试
           </div>
         </div>
       </div>
@@ -902,51 +665,15 @@
       <!-- DAY 2-3 -->
       <div class="action-card">
         <div class="card-header">
-          <div class="card-title">DAY 2-3 · 业务上手启动</div>
-          <span class="card-owner owner-dept">业务部门主导</span>
+          <div class="card-title">📅 Day 2-3 · 业务上手启动</div>
         </div>
         <div class="card-desc">
           <ul>
-            <li>指导学习常用系统及SOP手册（飞书、PDA等）</li>
-            <li>同步岗位涉及的业务文档和培训材料</li>
-            <li>实施岗位带教，讲解业务流程及注意事项</li>
-            <li>投入正式工作，及时予以指导</li>
-            <li>Buddy每日Check-in，解答融入疑问</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- DAY 4-7 -->
-      <div class="action-card">
-        <div class="card-header">
-          <div class="card-title">DAY 4-7 · 文化融入与系统培训</div>
-          <span class="card-owner owner-hrbp">HRBP主导</span>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li>参加入职培训，全面了解公司文化、福利机制、规章制度</li>
-            <li>完成线上学习平台必修课程（GEU新人启航培训 + GOFO通用课程）</li>
-            <li>安排参观当地仓库/运营中心（如适用）</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- 新人视角 Week 1 -->
-      <div class="action-card">
-        <div class="card-header">
-          <div class="card-title">🌟 我的第一周行动清单</div>
-          <span class="card-owner owner-newbie">新人</span>
-        </div>
-        <div class="card-desc">
-          <ul>
-            <li>按公司要求办理入职手续，签署劳动合同，领取入职礼包</li>
-            <li>熟悉办公环境，认识直接上级、核心团队成员、部门负责人等关键角色</li>
-            <li>开通办公软件及系统，完成账号激活和基础设置</li>
-            <li>主动做自我介绍，融入团队</li>
-            <li>学习业务文档和培训材料，主动向带教同事请教</li>
-            <li>参加入职培训，全面了解公司文化、福利机制、规章制度</li>
-            <li>完成线上学习平台推送的必修课程及考试</li>
-            <li>主动反馈入职感受、遇到的问题和疑惑</li>
+            <li>学习常用系统及SOP手册（飞书、PDA等），Buddy会手把手带你上手</li>
+            <li>获取岗位涉及的业务文档和培训材料</li>
+            <li>跟随带教同事学习业务流程及注意事项</li>
+            <li>开始投入正式工作，遇到问题随时向Buddy请教</li>
+            <li>Buddy每日Check-in，解答你的融入疑问</li>
           </ul>
           <div class="highlight-box green">
             <div class="hl-title">💡 小贴士</div>
@@ -954,15 +681,48 @@
           </div>
         </div>
       </div>
+
+      <!-- DAY 4-7 -->
+      <div class="action-card">
+        <div class="card-header">
+          <div class="card-title">📅 Day 4-7 · 文化融入与系统培训</div>
+        </div>
+        <div class="card-desc">
+          <ul>
+            <li>参加入职培训，全面了解公司文化、福利机制、规章制度</li>
+            <li>完成线上学习平台必修课程（GEU新人启航培训 + GOFO通用课程）</li>
+            <li>参观当地仓库/运营中心（如适用）</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Week 1 Checklist -->
+      <div class="action-card">
+        <div class="card-header">
+          <div class="card-title">✅ 我的第一周行动清单</div>
+        </div>
+        <div class="card-desc">
+          <ul>
+            <li>☐ 按公司要求办理入职手续，签署劳动合同，领取入职礼包</li>
+            <li>☐ 熟悉办公环境，认识直接上级、核心团队成员、部门负责人等关键角色</li>
+            <li>☐ 开通办公软件及系统，完成账号激活和基础设置</li>
+            <li>☐ 主动做自我介绍，融入团队</li>
+            <li>☐ 学习业务文档和培训材料，主动向带教同事请教</li>
+            <li>☐ 参加入职培训，全面了解公司文化、福利机制、规章制度</li>
+            <li>☐ 完成线上学习平台推送的必修课程及考试</li>
+            <li>☐ 主动反馈入职感受、遇到的问题和疑惑</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- PHASE 3 -->
+  <!-- PHASE 2: 深化·巩固 -->
   <div class="phase-block">
     <div class="phase-header">
-      <div class="phase-badge p3">03</div>
+      <div class="phase-badge p2">02</div>
       <div class="phase-title-group">
-        <h3>深化·巩固阶段</h3>
+        <h3>深化·巩固</h3>
         <div class="phase-period">Month 1-2 · 深入业务 & 文化巩固</div>
       </div>
     </div>
@@ -971,48 +731,32 @@
       <!-- Month 1 -->
       <div class="action-card">
         <div class="card-header">
-          <div class="card-title">Month 1 · 日常推进与融入跟进</div>
-          <span class="card-owner owner-all">多角色协同</span>
+          <div class="card-title">📅 Month 1 · 日常推进与融入跟进</div>
         </div>
         <div class="card-desc">
-          <strong>Week 2-4 · 直接上级：</strong>
           <ul>
-            <li>新人认真完成各项工作任务，主动向直接上级汇报工作进度、遇到的困难和疑问</li>
-            <li>每周至少一次工作Check-in，及时纠偏</li>
+            <li><strong>Week 2-4：</strong>认真完成各项工作任务，主动向直接上级汇报工作进度、遇到的困难和疑问；每周至少一次工作Check-in</li>
+            <li><strong>Week 3末：</strong>HRBP会主动与你沟通，了解你的融入情况，有什么想法都可以说</li>
+            <li><strong>Week 4末：</strong>与直接上级共同完成首月工作回顾，总结工作成果与不足，明确后续方向</li>
           </ul>
-          <strong>Week 3末 · 小结沟通（HRBP）：</strong>
-          <ul>
-            <li>HRBP主动询问员工融入情况，收集反馈</li>
-          </ul>
-          <strong>Week 4末 · 首月回顾（业务部门）：</strong>
-          <ul>
-            <li>与直接上级共同完成首月工作回顾，总结工作成果、不足，明确后续方向</li>
-            <li>所属部门与员工共同回顾首月表现，明确后续发展方向，识别风险员工</li>
-          </ul>
+          <div class="highlight-box blue">
+            <div class="hl-title">💡 小贴士</div>
+            每一次主动汇报，都是在为你的成长铺路。不要害怕暴露问题，你的上级和HRBP都期待听到你的真实声音！
+          </div>
         </div>
       </div>
 
       <!-- Month 2 -->
       <div class="action-card">
         <div class="card-header">
-          <div class="card-title">Month 2 · 持续改善与深度融入</div>
-          <span class="card-owner owner-all">多角色协同</span>
+          <div class="card-title">📅 Month 2 · 持续改善与深度融入</div>
         </div>
         <div class="card-desc">
-          <strong>直接上级：</strong>
           <ul>
-            <li>持续关注员工工作状态、困难支持、疑问解答，及时纠偏</li>
-            <li>及时和HRBP、直接上级沟通试用期情况</li>
-          </ul>
-          <strong>HRBP：</strong>
-          <ul>
-            <li>关注关键岗位员工的适应性和稳定性</li>
-            <li>与所属部门沟通风险员工改善情况</li>
-            <li>安排国内线下新员工培训报名（每月组织一次，地点福州，欧美区轮流参与）</li>
-          </ul>
-          <strong>行政/SSC：</strong>
-          <ul>
-            <li>协助办理社保、公积金等手续</li>
+            <li>持续关注自身工作状态，遇到困难及时向直接上级或HRBP反馈</li>
+            <li>参加国内线下新员工培训（每月组织一次，地点福州，欧美区轮流参与）</li>
+            <li>完成线上学习平台课程及术语认证考试</li>
+            <li>如有社保、公积金等手续需要办理，可联系行政/SSC协助</li>
           </ul>
         </div>
       </div>
@@ -1021,84 +765,76 @@
       <div class="action-card">
         <div class="card-header">
           <div class="card-title">🎉 入职3个月内 · 文化活动参与</div>
-          <span class="card-owner owner-all">多角色协同</span>
         </div>
         <div class="card-desc">
           <ul>
-            <li><strong>生日会：</strong>参加部门/公司生日会，在轻松氛围中认识更多同事</li>
-            <li><strong>季度团建：</strong>参与季度团队建设活动，加深与团队成员的连接和默契</li>
-            <li><strong>文化活动：</strong>参加公司组织的文化活动（节日庆祝、文化体验日等），感受企业文化氛围，加快融入</li>
+            <li><strong>🎂 生日会：</strong>参加部门/公司生日会，在轻松氛围中认识更多同事</li>
+            <li><strong>🤝 季度团建：</strong>参与季度团队建设活动，加深与团队成员的连接和默契</li>
+            <li><strong>🎊 文化活动：</strong>参加公司组织的文化活动（节日庆祝、文化体验日等），感受企业文化氛围</li>
           </ul>
           <div class="highlight-box">
-            <div class="hl-title">🎊 融入加速器</div>
-            通过生日会、季度团建、文化活动等非正式场景，帮助新人打破社交壁垒，在轻松的氛围中建立归属感，是提升新人留存率的关键触点
+            <div class="hl-title">🌟 融入加速器</div>
+            通过生日会、季度团建、文化活动等非正式场景，你可以快速打破社交壁垒，在轻松的氛围中建立归属感
           </div>
         </div>
       </div>
 
-      <!-- 新人视角 Month 1-2 -->
+      <!-- Month 1-2 Checklist -->
       <div class="action-card">
         <div class="card-header">
-          <div class="card-title">🌟 我的持续成长行动</div>
-          <span class="card-owner owner-newbie">新人</span>
+          <div class="card-title">✅ 我的持续成长行动</div>
         </div>
         <div class="card-desc">
           <ul>
-            <li>认真完成各项工作任务，主动汇报进度和困难</li>
-            <li>主动与HRBP沟通，反馈融入情况和工作感受</li>
-            <li>完成线上学习平台课程及术语认证考试</li>
-            <li>积极参与团队活动和文化活动</li>
-            <li>及时和上级、HRBP沟通试用期情况</li>
+            <li>☐ 认真完成各项工作任务，主动汇报进度和困难</li>
+            <li>☐ 主动与HRBP沟通，反馈融入情况和工作感受</li>
+            <li>☐ 完成线上学习平台课程及术语认证考试</li>
+            <li>☐ 积极参与团队活动和文化活动</li>
+            <li>☐ 及时和上级、HRBP沟通试用期情况</li>
           </ul>
-          <div class="highlight-box blue">
-            <div class="hl-title">💡 小贴士</div>
-            每一次主动沟通，都是在为你的成长铺路。不要害怕提问，你的上级和HRBP都期待听到你的声音！
-          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- PHASE 4 -->
+  <!-- PHASE 3: 成长·融入 -->
   <div class="phase-block">
     <div class="phase-header">
-      <div class="phase-badge p4">04</div>
+      <div class="phase-badge p3">03</div>
       <div class="phase-title-group">
-        <h3>成长·评估阶段</h3>
-        <div class="phase-period">Month 3+ · HRBP深入沟通，持续成长</div>
+        <h3>成长·融入</h3>
+        <div class="phase-period">Month 3+ · 持续成长，深度融入</div>
       </div>
     </div>
     <div class="actions-grid">
       <div class="action-card">
         <div class="card-header">
-          <div class="card-title">Month 2-3 · HRBP 1:1 深入沟通</div>
-          <span class="card-owner owner-hrbp">HRBP主导</span>
+          <div class="card-title">📅 Month 2-3 · HRBP与你1:1深入沟通</div>
         </div>
         <div class="card-desc">
           <ul>
-            <li>HRBP与新人进行1:1深入沟通，了解工作适应情况、团队融入感受和成长需求</li>
-            <li>收集新人对入职流程、培训内容、带教质量的反馈</li>
-            <li>识别潜在风险，及时协调资源支持</li>
-            <li>与直接上级沟通新人表现，确认后续发展方向</li>
+            <li>HRBP会与你进行1:1深入沟通，了解你的工作适应情况、团队融入感受和成长需求</li>
+            <li>你可以对入职流程、培训内容、带教质量等提出反馈</li>
+            <li>如果有任何困难或需要支持的资源，HRBP会帮你协调</li>
+            <li>HRBP会与你的直接上级沟通你的表现，确认后续发展方向</li>
           </ul>
           <div class="highlight-box purple">
-            <div class="hl-title">💡 沟通要点</div>
-            关注新人三个维度：业务胜任力（能否胜任当前岗位）、文化融入度（是否认同公司价值观）、团队协作感（是否与团队建立有效连接）
+            <div class="hl-title">💡 沟通小贴士</div>
+            这是一次属于你的深度对话，大胆说出你的感受和期望——关于业务胜任、文化认同、团队协作，都可以聊！
           </div>
         </div>
       </div>
 
       <div class="action-card">
         <div class="card-header">
-          <div class="card-title">🌟 我的成长期行动</div>
-          <span class="card-owner owner-newbie">新人</span>
+          <div class="card-title">✅ 我的成长期行动</div>
         </div>
         <div class="card-desc">
           <ul>
-            <li>主动与HRBP沟通成长感受与职业发展期望</li>
-            <li>持续参与团队活动和文化活动，加深融入</li>
-            <li>按要求与直接上级沟通试用期情况</li>
-            <li>根据反馈持续改进，明确自身发展方向</li>
+            <li>☐ 主动与HRBP沟通成长感受与职业发展期望</li>
+            <li>☐ 持续参与团队活动和文化活动，加深融入</li>
+            <li>☐ 按要求与直接上级沟通试用期情况</li>
+            <li>☐ 根据反馈持续改进，明确自身发展方向</li>
           </ul>
           <div class="highlight-box green">
             <div class="hl-title">💡 小贴士</div>
@@ -1113,140 +849,92 @@
 <!-- TIMELINE TABLE -->
 <section class="section" id="timeline">
   <div class="section-header">
-    <div class="section-tag">时间轴总览</div>
-    <h2>全周期关键动作一览表</h2>
-    <p class="section-desc">按时间节点梳理所有关键动作，让你对每个阶段该做什么一目了然</p>
+    <div class="section-tag">时间轴</div>
+    <h2>你的入职节奏一览</h2>
+    <p class="section-desc">按时间梳理你每个阶段需要做的事，一目了然</p>
   </div>
   <div class="timeline-table-wrapper">
     <table class="timeline-table">
       <thead>
         <tr>
-          <th style="width:12%">时间节点</th>
-          <th style="width:35%">关键动作</th>
-          <th style="width:25%">交付物/标准</th>
-          <th style="width:18%">主责方</th>
-          <th style="width:10%">备注</th>
+          <th style="width:15%">时间节点</th>
+          <th style="width:45%">你需要做什么 / 你会经历什么</th>
+          <th style="width:25%">完成标准</th>
+          <th style="width:15%">找谁</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="time-col">D-3</td>
-          <td>确认入职进度，同步业务部门及HRBP</td>
-          <td>入职确认邮件</td>
-          <td><span class="card-owner owner-hrbp" style="margin:0">招聘BP</span></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="time-col">D-3</td>
-          <td>准备入职礼包、办公设备等物资</td>
-          <td>物资清单确认表</td>
-          <td><span class="card-owner owner-admin" style="margin:0">行政部</span></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="time-col">D-1</td>
-          <td>发送Welcome Pack及入职指引</td>
-          <td>入职指南</td>
-          <td><span class="card-owner owner-hrbp" style="margin:0">HRBP</span></td>
-          <td></td>
+          <td class="time-col">Day 1</td>
+          <td>办理入职手续，签署劳动合同，领取入职礼包</td>
+          <td>入职手续完成签字、礼包签收</td>
+          <td>SSC / 行政</td>
         </tr>
         <tr>
           <td class="time-col">Day 1</td>
-          <td>SSC办理入职手续，签署劳动合同</td>
-          <td>入职手续完成签字</td>
-          <td><span class="card-owner owner-ssc" style="margin:0">SSC</span></td>
-          <td></td>
+          <td>熟悉办公环境，认识直接上级、核心团队成员</td>
+          <td>完成首日引导</td>
+          <td>招聘HR</td>
         </tr>
         <tr>
           <td class="time-col">Day 1</td>
-          <td>行政发放入职礼包</td>
-          <td>礼包签收</td>
-          <td><span class="card-owner owner-admin" style="margin:0">行政部</span></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="time-col">Day 1</td>
-          <td>招聘HR熟悉办公环境、安排见面、介绍价值观</td>
-          <td>首日引导完成</td>
-          <td><span class="card-owner owner-hrbp" style="margin:0">招聘HR</span></td>
-          <td>首日仪式感</td>
-        </tr>
-        <tr>
-          <td class="time-col">Day 1</td>
-          <td>部门群发送新人入职欢迎</td>
-          <td>欢迎消息</td>
-          <td><span class="card-owner owner-hrbp" style="margin:0">HR</span></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="time-col">Day 1</td>
-          <td>Buddy介绍，启动Buddy计划</td>
+          <td>了解GOFO价值观，认识你的Buddy</td>
           <td>Buddy配对确认</td>
-          <td><span class="card-owner owner-dept" style="margin:0">所属部门</span></td>
-          <td></td>
+          <td>招聘HR / 部门</td>
         </tr>
         <tr>
           <td class="time-col">Day 1（当周）</td>
-          <td>推送线上学习平台课程：GEU新人启航/术语考试/英语考试</td>
+          <td>查看线上学习平台推送的课程：GEU新人启航/术语考试/英语考试</td>
           <td>课程推送确认</td>
-          <td><span class="card-owner owner-ssc" style="margin:0">SSC</span></td>
-          <td>入职当周推送</td>
+          <td>SSC</td>
         </tr>
         <tr>
           <td class="time-col">Day 2-3</td>
-          <td>业务上手，系统学习，岗位带教</td>
+          <td>学习常用系统、业务文档，跟Buddy请教业务流程</td>
           <td>学习进度表</td>
-          <td><span class="card-owner owner-dept" style="margin:0">所属部门</span></td>
-          <td>Buddy每日Check-in</td>
+          <td>Buddy / 部门</td>
         </tr>
         <tr>
           <td class="time-col">Day 4-7</td>
-          <td>入职培训（文化/福利/制度/线上课程）</td>
-          <td>培训签到+课程完成记录</td>
-          <td><span class="card-owner owner-hrbp" style="margin:0">HRBP</span></td>
-          <td></td>
+          <td>参加入职培训，了解文化/福利/制度，完成线上课程</td>
+          <td>培训签到+课程完成</td>
+          <td>HRBP</td>
         </tr>
         <tr>
           <td class="time-col">Week 2-4</td>
-          <td>日常推进，周度工作Check-in</td>
+          <td>认真完成工作任务，每周与上级Check-in，主动汇报进度</td>
           <td>工作周报</td>
-          <td><span class="card-owner owner-dept" style="margin:0">直接上级</span></td>
-          <td>及时纠偏</td>
+          <td>直接上级</td>
         </tr>
         <tr>
           <td class="time-col">Week 3末</td>
-          <td>HRBP主动沟通融入情况</td>
-          <td>融入反馈记录</td>
-          <td><span class="card-owner owner-hrbp" style="margin:0">HRBP</span></td>
-          <td></td>
+          <td>HRBP主动与你沟通融入情况，有想法随时聊</td>
+          <td>融入反馈</td>
+          <td>HRBP</td>
         </tr>
         <tr>
           <td class="time-col">Week 4末</td>
-          <td>首月回顾，明确方向，识别风险</td>
+          <td>与直接上级完成首月工作回顾</td>
           <td>首月评估表</td>
-          <td><span class="card-owner owner-dept" style="margin:0">所属部门+HRBP</span></td>
-          <td>双向反馈</td>
+          <td>直接上级</td>
         </tr>
         <tr>
           <td class="time-col">Month 2</td>
-          <td>关注适应性，沟通试用期情况</td>
-          <td>月度沟通记录</td>
-          <td><span class="card-owner owner-hrbp" style="margin:0">HRBP+上级</span></td>
-          <td>风险员工预警</td>
+          <td>参加国内线下新员工培训（每月一次，福州）</td>
+          <td>培训签到</td>
+          <td>HRBP</td>
         </tr>
         <tr>
           <td class="time-col">Month 2-3</td>
-          <td>HRBP与新人1:1深入沟通</td>
+          <td>HRBP与你1:1深入沟通，聊适应、成长、期望</td>
           <td>1:1沟通记录</td>
-          <td><span class="card-owner owner-hrbp" style="margin:0">HRBP</span></td>
-          <td>业务/文化/团队三维度</td>
+          <td>HRBP</td>
         </tr>
         <tr>
           <td class="time-col">入职3个月内</td>
           <td>参加文化活动：生日会、季度团建、文化活动</td>
-          <td>活动参与记录</td>
-          <td><span class="card-owner owner-all" style="margin:0">全员协同</span></td>
-          <td>加快融入</td>
+          <td>活动参与</td>
+          <td>全员</td>
         </tr>
       </tbody>
     </table>
@@ -1256,6 +944,7 @@
 <!-- FOOTER -->
 <section class="footer-section">
   <h3>愿你在GOFO收获成长、绽放价值，与团队携手共进！</h3>
+  <h3 class="en">May you grow steadily, realize your value in GOFO, and forge ahead with the team!</h3>
   <div class="footer-letter">
     <p>加入GOFO，是你职场旅程中的一次重要选择，也是我们共同的起点。</p>
     <p>在这里，你的每一份努力都会被看见，每一次成长都有人陪伴，每一份才华都有舞台绽放。遇到困难时，请记住——你的身边有Buddy、有上级、有HRBP，我们始终在你身后。</p>
